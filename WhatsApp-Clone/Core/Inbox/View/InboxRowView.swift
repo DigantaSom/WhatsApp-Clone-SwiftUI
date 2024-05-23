@@ -10,7 +10,7 @@ import SwiftUI
 struct InboxRowView: View {
     var body: some View {
         HStack {
-            CircularProfileImageView(user: User.MOCK_USER, size: .medium)
+            CircularProfileImageView(user: User.MOCK_USERS[0], size: .medium)
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("Elizabeth Olsen")
@@ -28,7 +28,7 @@ struct InboxRowView: View {
                     .foregroundStyle(.gray)
                 
                 Circle()
-                    .frame(width: 22, height: 22)
+                    .frame(width: 20, height: 20)
                     .foregroundStyle(.green)
                     .overlay {
                         Text("1")
@@ -38,6 +38,7 @@ struct InboxRowView: View {
                     }
             }
         }
+        .font(.subheadline)
     }
 }
 

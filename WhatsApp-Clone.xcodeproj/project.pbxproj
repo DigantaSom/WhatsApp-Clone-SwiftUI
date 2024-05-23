@@ -18,6 +18,9 @@
 		F3EF94AA2BFDC7AC00865CE0 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94A92BFDC7AC00865CE0 /* CircularProfileImageView.swift */; };
 		F3EF94AE2BFDCA2100865CE0 /* NewChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94AD2BFDCA2100865CE0 /* NewChatView.swift */; };
 		F3EF94B12BFDCA5800865CE0 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94B02BFDCA5800865CE0 /* InboxViewModel.swift */; };
+		F3EF94B42BFFC4A700865CE0 /* NewChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94B32BFFC4A700865CE0 /* NewChatViewModel.swift */; };
+		F3EF94B62BFFCFB500865CE0 /* NewChatItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94B52BFFCFB500865CE0 /* NewChatItemView.swift */; };
+		F3EF94B82BFFD12400865CE0 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94B72BFFD12400865CE0 /* ContactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		F3EF94A92BFDC7AC00865CE0 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		F3EF94AD2BFDCA2100865CE0 /* NewChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatView.swift; sourceTree = "<group>"; };
 		F3EF94B02BFDCA5800865CE0 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
+		F3EF94B32BFFC4A700865CE0 /* NewChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatViewModel.swift; sourceTree = "<group>"; };
+		F3EF94B52BFFCFB500865CE0 /* NewChatItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatItemView.swift; sourceTree = "<group>"; };
+		F3EF94B72BFFD12400865CE0 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				F3EF94AC2BFDCA1B00865CE0 /* View */,
+				F3EF94B22BFFC49900865CE0 /* ViewModel */,
 			);
 			path = NewChat;
 			sourceTree = "<group>";
@@ -180,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				F3EF94AD2BFDCA2100865CE0 /* NewChatView.swift */,
+				F3EF94B52BFFCFB500865CE0 /* NewChatItemView.swift */,
+				F3EF94B72BFFD12400865CE0 /* ContactView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +197,14 @@
 			isa = PBXGroup;
 			children = (
 				F3EF94B02BFDCA5800865CE0 /* InboxViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3EF94B22BFFC49900865CE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94B32BFFC4A700865CE0 /* NewChatViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -263,10 +280,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3EF94AA2BFDC7AC00865CE0 /* CircularProfileImageView.swift in Sources */,
+				F3EF94B42BFFC4A700865CE0 /* NewChatViewModel.swift in Sources */,
 				F3EF94AE2BFDCA2100865CE0 /* NewChatView.swift in Sources */,
+				F3EF94B62BFFCFB500865CE0 /* NewChatItemView.swift in Sources */,
 				F3EF948C2BFDC20400865CE0 /* ContentView.swift in Sources */,
 				F3EF94A22BFDC40A00865CE0 /* InboxView.swift in Sources */,
 				F3EF948A2BFDC20400865CE0 /* WhatsApp_CloneApp.swift in Sources */,
+				F3EF94B82BFFD12400865CE0 /* ContactView.swift in Sources */,
 				F3EF94A52BFDC41B00865CE0 /* User.swift in Sources */,
 				F3EF94B12BFDCA5800865CE0 /* InboxViewModel.swift in Sources */,
 				F3EF94A72BFDC55100865CE0 /* InboxRowView.swift in Sources */,

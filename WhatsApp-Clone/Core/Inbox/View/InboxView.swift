@@ -63,7 +63,7 @@ struct InboxView: View {
                     }
                 }
             }
-            .fullScreenCover(isPresented: $viewModel.showNewChatView) {
+            .sheet(isPresented: $viewModel.showNewChatView) {
                 NewChatView()
             }
         }
