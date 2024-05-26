@@ -15,6 +15,13 @@ struct InboxView: View {
             List {
                 ForEach(0 ..< 10) { _ in
                     InboxRowView()
+                        .background(
+                            NavigationLink("") {
+                                ChatView()
+                                    .navigationBarBackButtonHidden()
+                            }
+                            .opacity(0)
+                        )
                 }
             }
             .listStyle(PlainListStyle())
