@@ -27,6 +27,15 @@
 		F3EF94C72C0362A700865CE0 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94C62C0362A700865CE0 /* MessageBubble.swift */; };
 		F3EF94C92C03BF5000865CE0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94C82C03BF5000865CE0 /* Message.swift */; };
 		F3EF94CD2C03C4D400865CE0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94CC2C03C4D400865CE0 /* Date.swift */; };
+		F3EF94D12C04C3D200865CE0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94D02C04C3D200865CE0 /* WelcomeView.swift */; };
+		F3EF94D42C04CAD600865CE0 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94D32C04CAD600865CE0 /* WelcomeViewModel.swift */; };
+		F3EF94D62C04CAF700865CE0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94D52C04CAF700865CE0 /* LoginView.swift */; };
+		F3EF94D82C0506EA00865CE0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94D72C0506EA00865CE0 /* LoginViewModel.swift */; };
+		F3EF94DB2C05083B00865CE0 /* FloatingInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94DA2C05083B00865CE0 /* FloatingInputField.swift */; };
+		F3EF94DF2C050BC500865CE0 /* AuthButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94DE2C050BC500865CE0 /* AuthButtonModifier.swift */; };
+		F3EF94E12C050D2500865CE0 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94E02C050D2500865CE0 /* RegistrationView.swift */; };
+		F3EF94E32C050D7A00865CE0 /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94E22C050D7A00865CE0 /* LogoImageView.swift */; };
+		F3EF94E52C050E8500865CE0 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94E42C050E8500865CE0 /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +60,15 @@
 		F3EF94C62C0362A700865CE0 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		F3EF94C82C03BF5000865CE0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F3EF94CC2C03C4D400865CE0 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F3EF94D02C04C3D200865CE0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F3EF94D32C04CAD600865CE0 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		F3EF94D52C04CAF700865CE0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F3EF94D72C0506EA00865CE0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F3EF94DA2C05083B00865CE0 /* FloatingInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingInputField.swift; sourceTree = "<group>"; };
+		F3EF94DE2C050BC500865CE0 /* AuthButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonModifier.swift; sourceTree = "<group>"; };
+		F3EF94E02C050D2500865CE0 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F3EF94E22C050D7A00865CE0 /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
+		F3EF94E42C050E8500865CE0 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +130,7 @@
 		F3EF94982BFDC21800865CE0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F3EF94CE2C04C3C600865CE0 /* Auth */,
 				F3EF94A82BFDC7A400865CE0 /* Components */,
 				F3EF94B92C023CCD00865CE0 /* Chat */,
 				F3EF949F2BFDC3FF00865CE0 /* Inbox */,
@@ -184,7 +203,8 @@
 		F3EF94A82BFDC7A400865CE0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F3EF94A92BFDC7AC00865CE0 /* CircularProfileImageView.swift */,
+				F3EF94DD2C050BAB00865CE0 /* View */,
+				F3EF94DC2C050BA000865CE0 /* Modifier */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -267,6 +287,53 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F3EF94CE2C04C3C600865CE0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94CF2C04C3C900865CE0 /* View */,
+				F3EF94D22C04CACD00865CE0 /* ViewModel */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F3EF94CF2C04C3C900865CE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94D02C04C3D200865CE0 /* WelcomeView.swift */,
+				F3EF94D52C04CAF700865CE0 /* LoginView.swift */,
+				F3EF94E02C050D2500865CE0 /* RegistrationView.swift */,
+				F3EF94E22C050D7A00865CE0 /* LogoImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3EF94D22C04CACD00865CE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94D32C04CAD600865CE0 /* WelcomeViewModel.swift */,
+				F3EF94D72C0506EA00865CE0 /* LoginViewModel.swift */,
+				F3EF94E42C050E8500865CE0 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3EF94DC2C050BA000865CE0 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94DE2C050BC500865CE0 /* AuthButtonModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		F3EF94DD2C050BAB00865CE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94A92BFDC7AC00865CE0 /* CircularProfileImageView.swift */,
+				F3EF94DA2C05083B00865CE0 /* FloatingInputField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,23 +405,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3EF94AA2BFDC7AC00865CE0 /* CircularProfileImageView.swift in Sources */,
+				F3EF94D42C04CAD600865CE0 /* WelcomeViewModel.swift in Sources */,
+				F3EF94D82C0506EA00865CE0 /* LoginViewModel.swift in Sources */,
 				F3EF94B42BFFC4A700865CE0 /* NewChatViewModel.swift in Sources */,
 				F3EF94AE2BFDCA2100865CE0 /* NewChatView.swift in Sources */,
 				F3EF94C92C03BF5000865CE0 /* Message.swift in Sources */,
 				F3EF94B62BFFCFB500865CE0 /* NewChatItemView.swift in Sources */,
 				F3EF948C2BFDC20400865CE0 /* ContentView.swift in Sources */,
+				F3EF94DF2C050BC500865CE0 /* AuthButtonModifier.swift in Sources */,
 				F3EF94A22BFDC40A00865CE0 /* InboxView.swift in Sources */,
 				F3EF94CD2C03C4D400865CE0 /* Date.swift in Sources */,
 				F3EF948A2BFDC20400865CE0 /* WhatsApp_CloneApp.swift in Sources */,
 				F3EF94BF2C024CB500865CE0 /* ChatViewModel.swift in Sources */,
 				F3EF94B82BFFD12400865CE0 /* ContactView.swift in Sources */,
+				F3EF94E12C050D2500865CE0 /* RegistrationView.swift in Sources */,
 				F3EF94A52BFDC41B00865CE0 /* User.swift in Sources */,
+				F3EF94E52C050E8500865CE0 /* RegistrationViewModel.swift in Sources */,
+				F3EF94DB2C05083B00865CE0 /* FloatingInputField.swift in Sources */,
+				F3EF94E32C050D7A00865CE0 /* LogoImageView.swift in Sources */,
 				F3EF94C32C03563100865CE0 /* ChatView.swift in Sources */,
 				F3EF94C52C035DC300865CE0 /* MessageCell.swift in Sources */,
+				F3EF94D62C04CAF700865CE0 /* LoginView.swift in Sources */,
 				F3EF94B12BFDCA5800865CE0 /* InboxViewModel.swift in Sources */,
 				F3EF94A72BFDC55100865CE0 /* InboxRowView.swift in Sources */,
 				F3EF949E2BFDC24500865CE0 /* MainTabView.swift in Sources */,
 				F3EF94C72C0362A700865CE0 /* MessageBubble.swift in Sources */,
+				F3EF94D12C04C3D200865CE0 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
