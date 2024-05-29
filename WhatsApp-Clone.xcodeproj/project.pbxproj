@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F34FEAA92C079FF200589BF2 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34FEAA82C079FF200589BF2 /* ProfileImageView.swift */; };
 		F3EF948A2BFDC20400865CE0 /* WhatsApp_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94892BFDC20400865CE0 /* WhatsApp_CloneApp.swift */; };
 		F3EF948C2BFDC20400865CE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF948B2BFDC20400865CE0 /* ContentView.swift */; };
 		F3EF948E2BFDC20600865CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EF948D2BFDC20600865CE0 /* Assets.xcassets */; };
@@ -36,9 +37,18 @@
 		F3EF94E12C050D2500865CE0 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94E02C050D2500865CE0 /* RegistrationView.swift */; };
 		F3EF94E32C050D7A00865CE0 /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94E22C050D7A00865CE0 /* LogoImageView.swift */; };
 		F3EF94E52C050E8500865CE0 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94E42C050E8500865CE0 /* RegistrationViewModel.swift */; };
+		F3EF94EA2C064BB600865CE0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94E92C064BB600865CE0 /* SettingsView.swift */; };
+		F3EF94EC2C064EB400865CE0 /* SettingsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94EB2C064EB400865CE0 /* SettingsListItem.swift */; };
+		F3EF94F42C06564500865CE0 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94F32C06564500865CE0 /* EditProfileView.swift */; };
+		F3EF94F82C06598A00865CE0 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94F72C06598A00865CE0 /* EditProfileViewModel.swift */; };
+		F3EF94FA2C065C1D00865CE0 /* EditAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94F92C065C1D00865CE0 /* EditAboutView.swift */; };
+		F3EF94FC2C06617600865CE0 /* EditAboutModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94FB2C06617600865CE0 /* EditAboutModal.swift */; };
+		F3EF94FE2C06618D00865CE0 /* EditAboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94FD2C06618D00865CE0 /* EditAboutViewModel.swift */; };
+		F3EF95002C06660C00865CE0 /* AboutOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94FF2C06660C00865CE0 /* AboutOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F34FEAA82C079FF200589BF2 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		F3EF94862BFDC20400865CE0 /* WhatsApp-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhatsApp-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EF94892BFDC20400865CE0 /* WhatsApp_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsApp_CloneApp.swift; sourceTree = "<group>"; };
 		F3EF948B2BFDC20400865CE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +79,14 @@
 		F3EF94E02C050D2500865CE0 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		F3EF94E22C050D7A00865CE0 /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
 		F3EF94E42C050E8500865CE0 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		F3EF94E92C064BB600865CE0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F3EF94EB2C064EB400865CE0 /* SettingsListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListItem.swift; sourceTree = "<group>"; };
+		F3EF94F32C06564500865CE0 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		F3EF94F72C06598A00865CE0 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		F3EF94F92C065C1D00865CE0 /* EditAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAboutView.swift; sourceTree = "<group>"; };
+		F3EF94FB2C06617600865CE0 /* EditAboutModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAboutModal.swift; sourceTree = "<group>"; };
+		F3EF94FD2C06618D00865CE0 /* EditAboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAboutViewModel.swift; sourceTree = "<group>"; };
+		F3EF94FF2C06660C00865CE0 /* AboutOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +153,9 @@
 				F3EF94B92C023CCD00865CE0 /* Chat */,
 				F3EF949F2BFDC3FF00865CE0 /* Inbox */,
 				F3EF94AB2BFDCA0B00865CE0 /* NewChat */,
+				F3EF94F22C06561E00865CE0 /* Profile */,
 				F3EF94992BFDC21F00865CE0 /* Root */,
+				F3EF94E72C064B9F00865CE0 /* Settings */,
 				F3EF949B2BFDC23100865CE0 /* TabBar */,
 			);
 			path = Core;
@@ -196,6 +216,7 @@
 			children = (
 				F3EF94A42BFDC41B00865CE0 /* User.swift */,
 				F3EF94C82C03BF5000865CE0 /* Message.swift */,
+				F3EF94FF2C06660C00865CE0 /* AboutOption.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -334,6 +355,52 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F3EF94E72C064B9F00865CE0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94E82C064BB000865CE0 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F3EF94E82C064BB000865CE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94E92C064BB600865CE0 /* SettingsView.swift */,
+				F3EF94EB2C064EB400865CE0 /* SettingsListItem.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3EF94F22C06561E00865CE0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94F62C06597F00865CE0 /* View */,
+				F3EF94F52C06597900865CE0 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F3EF94F52C06597900865CE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94F72C06598A00865CE0 /* EditProfileViewModel.swift */,
+				F3EF94FD2C06618D00865CE0 /* EditAboutViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3EF94F62C06597F00865CE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3EF94F32C06564500865CE0 /* EditProfileView.swift */,
+				F3EF94F92C065C1D00865CE0 /* EditAboutView.swift */,
+				F3EF94FB2C06617600865CE0 /* EditAboutModal.swift */,
+				F34FEAA82C079FF200589BF2 /* ProfileImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,23 +475,32 @@
 				F3EF94D42C04CAD600865CE0 /* WelcomeViewModel.swift in Sources */,
 				F3EF94D82C0506EA00865CE0 /* LoginViewModel.swift in Sources */,
 				F3EF94B42BFFC4A700865CE0 /* NewChatViewModel.swift in Sources */,
+				F3EF94FC2C06617600865CE0 /* EditAboutModal.swift in Sources */,
 				F3EF94AE2BFDCA2100865CE0 /* NewChatView.swift in Sources */,
+				F3EF94FE2C06618D00865CE0 /* EditAboutViewModel.swift in Sources */,
 				F3EF94C92C03BF5000865CE0 /* Message.swift in Sources */,
 				F3EF94B62BFFCFB500865CE0 /* NewChatItemView.swift in Sources */,
 				F3EF948C2BFDC20400865CE0 /* ContentView.swift in Sources */,
 				F3EF94DF2C050BC500865CE0 /* AuthButtonModifier.swift in Sources */,
 				F3EF94A22BFDC40A00865CE0 /* InboxView.swift in Sources */,
+				F3EF94FA2C065C1D00865CE0 /* EditAboutView.swift in Sources */,
 				F3EF94CD2C03C4D400865CE0 /* Date.swift in Sources */,
+				F3EF94EC2C064EB400865CE0 /* SettingsListItem.swift in Sources */,
+				F3EF94F82C06598A00865CE0 /* EditProfileViewModel.swift in Sources */,
 				F3EF948A2BFDC20400865CE0 /* WhatsApp_CloneApp.swift in Sources */,
 				F3EF94BF2C024CB500865CE0 /* ChatViewModel.swift in Sources */,
 				F3EF94B82BFFD12400865CE0 /* ContactView.swift in Sources */,
 				F3EF94E12C050D2500865CE0 /* RegistrationView.swift in Sources */,
 				F3EF94A52BFDC41B00865CE0 /* User.swift in Sources */,
+				F3EF95002C06660C00865CE0 /* AboutOption.swift in Sources */,
 				F3EF94E52C050E8500865CE0 /* RegistrationViewModel.swift in Sources */,
 				F3EF94DB2C05083B00865CE0 /* FloatingInputField.swift in Sources */,
+				F34FEAA92C079FF200589BF2 /* ProfileImageView.swift in Sources */,
 				F3EF94E32C050D7A00865CE0 /* LogoImageView.swift in Sources */,
 				F3EF94C32C03563100865CE0 /* ChatView.swift in Sources */,
 				F3EF94C52C035DC300865CE0 /* MessageCell.swift in Sources */,
+				F3EF94F42C06564500865CE0 /* EditProfileView.swift in Sources */,
+				F3EF94EA2C064BB600865CE0 /* SettingsView.swift in Sources */,
 				F3EF94D62C04CAF700865CE0 /* LoginView.swift in Sources */,
 				F3EF94B12BFDCA5800865CE0 /* InboxViewModel.swift in Sources */,
 				F3EF94A72BFDC55100865CE0 /* InboxRowView.swift in Sources */,

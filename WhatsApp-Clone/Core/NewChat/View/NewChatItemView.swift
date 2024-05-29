@@ -26,7 +26,6 @@ struct NewChatItemView: View {
                 }
             Text(title)
                 .font(.subheadline)
-                .fontWeight(.semibold)
         }
     }
 }

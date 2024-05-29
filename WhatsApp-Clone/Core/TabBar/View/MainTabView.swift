@@ -30,7 +30,7 @@ struct MainTabView: View {
                 }
                 .tag(1)
             
-            Text("Settings")
+            SettingsView()
                 .tabItem {
                     VStack {
                         Image(systemName: "gear")
