@@ -23,7 +23,7 @@ struct RegistrationView: View {
             FloatingInputField(label: "Password", text: $viewModel.password)
             
             Button {
-                
+                Task { try await viewModel.registerUser() }
             } label: {
                 Text("Sign up")
                     .authButtonModifier()

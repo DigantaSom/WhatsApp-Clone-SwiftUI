@@ -9,6 +9,11 @@ import SwiftUI
 
 struct MainTabView: View {
     @State private var selectedTabIndex: Int = 1
+    private let currentUser: User
+    
+    init(currentUser: User) {
+        self.currentUser = currentUser
+    }
     
     var body: some View {
         TabView(selection: $selectedTabIndex) {
@@ -30,7 +35,7 @@ struct MainTabView: View {
                 }
                 .tag(1)
             
-            SettingsView()
+            SettingsView(user: currentUser)
                 .tabItem {
                     VStack {
                         Image(systemName: "gear")
@@ -43,5 +48,5 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView()
+    MainTabView(currentUser: User.MOCK_USERS[0])
 }

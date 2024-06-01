@@ -8,18 +8,27 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @StateObject private var viewModel = SettingsViewModel()
+    private let user: User
+    
+    init(user: User) {
+        self.user = user
+    }
+    
     var body: some View {
         NavigationStack {
             VStack {
                 List {
                     Section {
                         HStack(spacing: 15) {
-                            CircularProfileImageView(user: User.MOCK_USERS[0], size: .large)
+                            CircularProfileImageView(user: user, size: .large)
                             VStack(alignment: .leading) {
-                                Text("Elizabeth Olsen")
-                                Text("Hey there! I'm using WhatsApp.")
-                                    .font(.subheadline)
-                                    .foregroundStyle(.gray)
+                                Text(user.fullname)
+                                if let about = user.about {
+                                    Text(about)
+                                        .font(.subheadline)
+                                        .foregroundStyle(.gray)
+                                }
                             }
                         }
                         .background(
@@ -52,7 +61,7 @@ struct SettingsView: View {
                         SettingsListItem(imageName: "info.circle", title: "Help")
                         SettingsListItem(imageName: "heart", title: "Tell a Friend")
                         Button {
-                            
+                            viewModel.logout()
                         } label: {
                             SettingsListItem(imageName: "rectangle.portrait.and.arrow.right", title: "Log Out")
                         }
@@ -66,5 +75,5 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
+    SettingsView(user: User.MOCK_USERS[0])
 }
