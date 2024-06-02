@@ -42,11 +42,22 @@ class UserService {
     @MainActor
     func updateFullname(fullname: String) async throws {
         do {
-            guard let uid = Auth.auth().currentUser?.uid else { return }
+            guard let uid = self.currentUser?.id else { return }
             try await Firestore.firestore().collection("users").document(uid).updateData(["fullname": fullname])
             self.currentUser?.fullname = fullname
         } catch {
             print("DEBUG: Failed to update fullname with error: \(error.localizedDescription)")
+        }
+    }
+    
+    @MainActor
+    func updateProfileImage(withUrl imageUrl: String) async throws {
+        do {
+            guard let uid = self.currentUser?.id else { return }
+            try await Firestore.firestore().collection("users").document(uid).updateData(["profileImageUrl": imageUrl])
+            self.currentUser?.profileImageUrl = imageUrl
+        } catch {
+            print("DEBUG: Failed to update profile image with error: \(error.localizedDescription)")
         }
     }
 }

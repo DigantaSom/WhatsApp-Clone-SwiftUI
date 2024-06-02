@@ -18,9 +18,9 @@ struct User: Identifiable, Codable {
 
 extension User {
     static let MOCK_USERS: [User] = [
-        .init(email: "wanda@gmail.com", fullname: "Wanda Maximoff", phoneNumber: "+11111", profileImageUrl: "elizabeth"),
-        .init(email: "batman@gmail.com", fullname: "Bruce Wayne", phoneNumber: "+11111", profileImageUrl: "batman"),
-        .init(email: "ironman@gmail.com", fullname: "Tony Stark", phoneNumber: "+11111", profileImageUrl: "iron-man"),
-        .init(email: "blackpanther@gmail.com", fullname: "Black Panther", phoneNumber: "+11111", profileImageUrl: "black-panther"),
+        .init(email: "wanda@gmail.com", fullname: "Wanda Maximoff", phoneNumber: "+11111", profileImageUrl: nil),
+        .init(email: "batman@gmail.com", fullname: "Bruce Wayne", phoneNumber: "+11111", profileImageUrl: nil),
+        .init(email: "ironman@gmail.com", fullname: "Tony Stark", phoneNumber: "+11111", profileImageUrl: nil),
+        .init(email: "blackpanther@gmail.com", fullname: "Black Panther", phoneNumber: "+11111", profileImageUrl: nil),
     ]
 }
