@@ -14,6 +14,8 @@ class ContentViewModel: ObservableObject {
     @Published var currentUser: User?
     
     private let authService = AuthService.shared
+    private let userService = UserService.shared
+    
     private var cancellables = Set<AnyCancellable>()
     
     init() {
@@ -26,7 +28,7 @@ class ContentViewModel: ObservableObject {
         }
         .store(in: &cancellables)
         
-        authService.$currentUser.sink { [weak self] currentUser in
+        userService.$currentUser.sink { [weak self] currentUser in
             self?.currentUser = currentUser
         }
         .store(in: &cancellables)

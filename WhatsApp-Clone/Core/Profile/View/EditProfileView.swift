@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct EditProfileView: View {
-    @StateObject private var viewModel = EditProfileViewModel()
+    private let user: User
+    @StateObject private var viewModel: EditProfileViewModel
     @Environment(\.dismiss) private var dismissView
+    @FocusState private var isNameFieldFocused: Bool
+    @State private var oldFullname: String
+    
+    init(user: User) {
+        self.user = user
+        self._viewModel = StateObject(wrappedValue: EditProfileViewModel(fullname: user.fullname, phoneNumber: user.phoneNumber, about: user.about))
+        self.oldFullname = user.fullname
+    }
     
     var body: some View {
         NavigationStack {
@@ -18,13 +27,13 @@ struct EditProfileView: View {
                     Section {
                         HStack(alignment: .top, spacing: 15) {
                             VStack {
-                                CircularProfileImageView(user: User.MOCK_USERS[0], size: .large)
+                                CircularProfileImageView(user: user, size: .large)
                                 Text("Edit")
                                     .foregroundStyle(.green)
                             }
                             .background(
                                 NavigationLink("") {
-                                    ProfileImageView(imageUrl: User.MOCK_USERS[0].profileImageUrl)
+                                    ProfileImageView(imageUrl: user.profileImageUrl)
                                         .navigationBarBackButtonHidden()
                                 }
                                 .opacity(0)
@@ -37,6 +46,8 @@ struct EditProfileView: View {
                         
                         HStack {
                             TextField("", text: $viewModel.fullname)
+                                .focused($isNameFieldFocused)
+                            
                             Text("\(25 - viewModel.fullname.count)")
                                 .foregroundStyle(.gray)
                         }
@@ -55,7 +66,7 @@ struct EditProfileView: View {
                             EditAboutView(currentAbout: viewModel.about)
                                 .navigationBarBackButtonHidden()
                         } label: {
-                            Text(viewModel.about)
+                            Text(viewModel.about ?? "")
                                 .font(.subheadline)
                         }
                     } header: {
@@ -67,10 +78,35 @@ struct EditProfileView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        dismissView()
-                    } label: {
-                        Image(systemName: "chevron.left")
+                    if isNameFieldFocused {
+                        Button {
+                            viewModel.fullname = oldFullname
+                            isNameFieldFocused = false
+                        } label: {
+                            Text("Cancel")
+                        }
+                    } else {
+                        Button {
+                            dismissView()
+                        } label: {
+                            Image(systemName: "chevron.left")
+                        }
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    if isNameFieldFocused {
+                        Button {
+                            Task {
+                                if viewModel.fullname != oldFullname {
+                                    try await viewModel.updateFullname()
+                                    isNameFieldFocused = false
+                                    oldFullname = viewModel.fullname
+                                }
+                            }
+                        } label: {
+                            Text("Done")
+                                .fontWeight(.semibold)
+                        }
                     }
                 }
             }
@@ -79,5 +115,5 @@ struct EditProfileView: View {
 }
 
 #Preview {
-    EditProfileView()
+    EditProfileView(user: User.MOCK_USERS[0])
 }

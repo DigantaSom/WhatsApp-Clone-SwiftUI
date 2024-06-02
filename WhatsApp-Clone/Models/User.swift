@@ -10,7 +10,7 @@ import Foundation
 struct User: Identifiable, Codable {
     var id: String = NSUUID().uuidString
     let email: String
-    let fullname: String
+    var fullname: String
     let phoneNumber: String
     var profileImageUrl: String?
     var about: String? = "Hey there! I am using WhatsApp."

@@ -33,7 +33,7 @@ struct SettingsView: View {
                         }
                         .background(
                             NavigationLink("") {
-                                EditProfileView()
+                                EditProfileView(user: user)
                                     .navigationBarBackButtonHidden()
                             }
                             .opacity(0)

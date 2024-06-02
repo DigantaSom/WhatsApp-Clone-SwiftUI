@@ -28,7 +28,7 @@ struct LoginView: View {
                     .padding(.top)
                 
                 Button {
-                    
+                    Task { try await viewModel.login() }
                 } label: {
                     Text("Login")
                         .authButtonModifier()

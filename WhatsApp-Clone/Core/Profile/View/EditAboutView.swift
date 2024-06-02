@@ -10,9 +10,9 @@ import SwiftUI
 struct EditAboutView: View {
     @StateObject private var viewModel = EditAboutViewModel()
     @Environment(\.dismiss) private var dismissView
-    private var currentAbout: String
+    private var currentAbout: String?
     
-    init(currentAbout: String) {
+    init(currentAbout: String?) {
         self.currentAbout = currentAbout
     }
     
@@ -24,7 +24,7 @@ struct EditAboutView: View {
                         viewModel.showModal.toggle()
                     } label: {
                         HStack {
-                            Text(currentAbout)
+                            Text(currentAbout ?? "")
                                 .font(.subheadline)
                             Spacer()
                             Image(systemName: "chevron.right")
@@ -70,7 +70,7 @@ struct EditAboutView: View {
             }
         }
         .sheet(isPresented: $viewModel.showModal) {
-            EditAboutModal(text: currentAbout)
+            EditAboutModal(text: currentAbout ?? "")
         }
     }
 }
