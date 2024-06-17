@@ -19,6 +19,7 @@
 		F3A415F02C0CEF7C00CFE45B /* ProfileImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A415EF2C0CEF7C00CFE45B /* ProfileImageViewModel.swift */; };
 		F3A415F22C0CF6B400CFE45B /* StorageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A415F12C0CF6B400CFE45B /* StorageUploader.swift */; };
 		F3A415F52C0CFC4600CFE45B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F3A415F42C0CFC4600CFE45B /* Kingfisher */; };
+		F3A415F92C10697500CFE45B /* ProfileImageSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A415F82C10697500CFE45B /* ProfileImageSheetView.swift */; };
 		F3EF948A2BFDC20400865CE0 /* WhatsApp_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF94892BFDC20400865CE0 /* WhatsApp_CloneApp.swift */; };
 		F3EF948C2BFDC20400865CE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF948B2BFDC20400865CE0 /* ContentView.swift */; };
 		F3EF948E2BFDC20600865CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EF948D2BFDC20600865CE0 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		F34FEABF2C0B04A300589BF2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		F3A415EF2C0CEF7C00CFE45B /* ProfileImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageViewModel.swift; sourceTree = "<group>"; };
 		F3A415F12C0CF6B400CFE45B /* StorageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUploader.swift; sourceTree = "<group>"; };
+		F3A415F82C10697500CFE45B /* ProfileImageSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageSheetView.swift; sourceTree = "<group>"; };
 		F3EF94862BFDC20400865CE0 /* WhatsApp-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhatsApp-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EF94892BFDC20400865CE0 /* WhatsApp_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsApp_CloneApp.swift; sourceTree = "<group>"; };
 		F3EF948B2BFDC20400865CE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -458,6 +460,7 @@
 				F3EF94F92C065C1D00865CE0 /* EditAboutView.swift */,
 				F3EF94FB2C06617600865CE0 /* EditAboutModal.swift */,
 				F34FEAA82C079FF200589BF2 /* ProfileImageView.swift */,
+				F3A415F82C10697500CFE45B /* ProfileImageSheetView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 				F3EF94A72BFDC55100865CE0 /* InboxRowView.swift in Sources */,
 				F34FEAC02C0B04A300589BF2 /* UserService.swift in Sources */,
 				F3EF949E2BFDC24500865CE0 /* MainTabView.swift in Sources */,
+				F3A415F92C10697500CFE45B /* ProfileImageSheetView.swift in Sources */,
 				F3EF94C72C0362A700865CE0 /* MessageBubble.swift in Sources */,
 				F3EF94D12C04C3D200865CE0 /* WelcomeView.swift in Sources */,
 				F3A415F22C0CF6B400CFE45B /* StorageUploader.swift in Sources */,

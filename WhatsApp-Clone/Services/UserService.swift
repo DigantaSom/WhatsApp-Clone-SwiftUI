@@ -52,10 +52,12 @@ class UserService {
     
     @MainActor
     func updateProfileImage(withUrl imageUrl: String) async throws {
+        // if imageUrl is an empty string, then user is essentially deleting profile image
+        let newImageUrl = imageUrl.isEmpty ? nil : imageUrl
         do {
             guard let uid = self.currentUser?.id else { return }
-            try await Firestore.firestore().collection("users").document(uid).updateData(["profileImageUrl": imageUrl])
-            self.currentUser?.profileImageUrl = imageUrl
+            try await Firestore.firestore().collection("users").document(uid).updateData(["profileImageUrl": newImageUrl as Any])
+            self.currentUser?.profileImageUrl = newImageUrl
         } catch {
             print("DEBUG: Failed to update profile image with error: \(error.localizedDescription)")
         }
